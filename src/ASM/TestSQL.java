@@ -34,14 +34,14 @@ public class TestSQL {
         String deleteSQL="delete from student where id=3";
         Statement actionSt=conn.createStatement();
         int soDong=actionSt.executeUpdate(insertSQL);
-        if(soDong>0) System.out.println("Da chen");
+        if(soDong>0) System.out.println("Da chen insert");
         
         soDong=actionSt.executeUpdate(updateSQL);
-        if(soDong>0) System.out.println("Da sua");
+        if(soDong>0) System.out.println("Da sua edit");
         
         soDong=actionSt.executeUpdate(deleteSQL);
-        if(soDong>0) System.out.println("Da xoa");
-        
+        if(soDong>0) System.out.println("Da xoa delete");
+         
         
         }catch (SQLException ex){}
         
